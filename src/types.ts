@@ -41,4 +41,6 @@ export type SocialMedia =
   | "Telegram"
   | "Mastodon"
   | "Sessionize"
-  | "OpenSauced";
+  | "OpenSauced"
+  | "BSky"
+  | "Medium";

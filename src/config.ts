@@ -1,13 +1,13 @@
 import type { Site, SocialObjects } from "./types";
 
 export const SITE: Site = {
-  website: "https://aatmmr.github.io/",
-  author: "Maik Müller",
-  desc: "Tutorials, Snippets and Ideas",
-  title: "aatmmr.dev",
-  ogImage: "aatmmr-og.jpg",
+  website: "https://aaronngray.github.io/",
+  author: "AaronNGray",
+  desc: "Blog of AaronNGray, project status, updates, technology examples,and Ideas",
+  title: "aaronngray.org",
+  ogImage: "https://avatars.githubusercontent.com/u/85523?v=4",
   lightAndDarkMode: true,
-  postPerPage: 5,
+  postPerPage: 10,
 };
 
 export const LOCALE = ["en-EN"]; // set to [] to use the environment default
@@ -21,38 +21,38 @@ export const LOGO_IMAGE = {
 
 export const LOGO_LABEL = {
   enable: true,
-  text: "aatmmr.dev",
+  text: "aaronngray.org",
 };
 
 export const SOCIALS: SocialObjects = [
   {
     name: "Github",
-    href: "https://github.com/aatmmr",
+    href: "https://github.com/aaronngray",
     linkTitle: ` ${SITE.title} on Github`,
     active: true,
   },
   {
     name: "LinkedIn",
-    href: "https://linkedin.com/in/aatmmr",
+    href: "https://linkedin.com/in/aaronngray",
     linkTitle: `${SITE.title} on LinkedIn`,
     active: true,
   },
   {
     name: "Mail",
-    href: "mailto:yourmail@gmail.com",
+    href: "mailto:mail@aaronngray.org",
     linkTitle: `Send an email to ${SITE.title}`,
     active: false,
   },
   {
-    name: "Sessionize",
-    href: "https://sessionize.com/maik-mueller/",
-    linkTitle: `${SITE.title} on Sessionize`,
+    name: "BSky",
+    href: "https://bsky.app/profile/aaronngray.bsky.social",
+    linkTitle: `${SITE.title} on bsky`,
     active: true,
   },
   {
-    name: "OpenSauced",
-    href: "https://app.opensauced.pizza/user/aatmmr?tab=contributions",
-    linkTitle: `${SITE.title} on OpenSauced`,
+    name: "Medium",
+    href: "https://medium.com/@aaronngray",
+    linkTitle: `${SITE.title} on Medium`,
     active: true,
   },
 ];

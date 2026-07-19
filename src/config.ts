@@ -38,21 +38,21 @@ export const SOCIALS: SocialObjects = [
     active: true,
   },
   {
-    name: "Mail",
-    href: "mailto:mail@aaronngray.org",
-    linkTitle: `Send an email to ${SITE.title}`,
-    active: true,
-  },
-  {
-    name: "BSky",
+    name: "BlueSky",
     href: "https://bsky.app/profile/aaronngray.bsky.social",
-    linkTitle: `${SITE.title} on bsky`,
+    linkTitle: `${SITE.title} on BlueSky`,
     active: true,
   },
   {
     name: "Medium",
     href: "https://medium.com/@aaronngray",
     linkTitle: `${SITE.title} on Medium`,
+    active: true,
+  },
+  {
+    name: "Mail",
+    href: "mailto:mail@aaronngray.org",
+    linkTitle: `Send an email to ${SITE.title}`,
     active: true,
   },
 ];

@@ -222,6 +222,12 @@ const socialIcons: SocialIcons = {
       <path d="M142 253 c-25 -37 -81 -165 -84 -195 -3 -23 -2 -23 91 -21 52 2 99 7 103 11 5 5 6 51 2 102 -5 71 -12 98 -26 112 -27 27 -63 23 -86 -9z"/>
     </g>
   </svg>`,
+  BlueSky: `<svg class="icon-tabler" width="80%" height="80%" viewBox="0 0 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"
+    <g id="inner-background" transform="matrix(0.416667,0,0,0.416667,0.416667,1.81551)">
+      <path d="M29,48L23,48C23,42.592 19.915,40.082 12.374,40.002L12,40C10.667,40 9.667,39.667 9,39C8.333,38.333 8,37.333 8,36L24,0L24.218,0.639C26.216,6.356 29.143,11.143 33,15C36.857,18.857 41.644,21.784 47.361,23.782L48,24L21.58,
+      35.742C26.303,37.858 28.9,41.873 28.997,47.662L29,48ZM40.814,7.186C42.376,8.748 43.009,10.648 42.228,11.428C41.447,12.209 39.548,11.576 37.986,10.014C36.424,8.452 35.791,6.552 36.572,5.772C37.353,4.991 39.252,5.624 40.814,7.186Z" style="fill:none;stroke-width:4.8px;"/>
+    </g>
+  </svg>`,
 };
 
 export default socialIcons;

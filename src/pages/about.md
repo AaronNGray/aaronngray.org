@@ -3,16 +3,6 @@ layout: ../layouts/AboutLayout.astro
 title: "About"
 ---
 
-My name is Maik, and I am a Senior Solution Architect, GitHub Trainer, and Octowizard at <a href="https://solidify.dev/">Solidify</a>. I spend most of my day with GitHub, deep-diving into any corner of the platform and becoming an Octowizard, and I like to share my knowledge and findings.
+Meta-Mathematician, Independent Open Source Software Engineer, Computer Language Researcher and Designer, Type Theorist, Computer Scientist, Climate Science Researcher and Disseminator, Environmentalist, Vegan.
 
-## Badges
-
-The close work with GitHub comes naturally with certificates that I obtained during my endeavors.
-
-<div class="grid grid-cols-4 gap-x-1 gap-y-1">
-  <img src="/badges/github-actions_medium.png" alt="github actions certificate badge">
-  <img src="/badges/github-administration_medium.png" alt="github actions administration badge">
-  <img src="/badges/github-advanced-security_medium.png" alt="github actions advanced security badge">
-  <img src="/badges/github-foundations-for-non-developers_medium.png" alt="github fundamentals certificate badge">
-  <img src="/badges/github-copilot_medium.png" alt="github copilot certificate badge">
-</div>
+I am working on decentralized communications solutions, and on a general purpose systems programming and meta language called SOOL, standing for Simple/Sophisticated/Static Object Oriented Language a language design intended as a successor to C++, C, Java, and TypeScript.

@@ -23,18 +23,18 @@ const socialCount = SOCIALS.filter(social => social.active).length;
   <Header />
   <main id="main-content">
     <section id="hero">
-      <h1 class="mr-2">Welcome</h1>
-      <p>
-        A very great welcome to my blog and future homepage.
-      </p>
       {
         // only display if at least one social link is enabled
         socialCount > 0 && (
-          <div class="social-wrapper">
+          <div class="top-social-icons-wrapper">
             <Socials />
           </div>
         )
       }
+      <h1 class="mr-2">Welcome</h1>
+      <p>
+        A very great welcome to my blog and future homepage.
+      </p>
     </section>
 
     <Hr />
@@ -113,8 +113,11 @@ const socialCount = SOCIALS.filter(social => social.active).length;
   .social-wrapper {
     @apply mt-4 flex flex-col sm:flex-row sm:items-center;
   }
+  .top-social-icons-wrapper {
+    @apply mb-4 flex m-0 sm:justify-end;
+  }
   .social-links {
-    @apply mb-1 mr-2 whitespace-nowrap sm:mb-0;
+    @apply m-0 mr-2 whitespace-nowrap sm:mb-0;
   }
 
   /* ===== Featured & Recent Posts Sections ===== */

@@ -46,4 +46,5 @@ export type SocialMedia =
   | "Sessionize"
   | "OpenSauced"
   | "BlueSky"
-  | "Medium";
+  | "Medium"
+  | "RSS";

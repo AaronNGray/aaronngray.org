@@ -73,7 +73,14 @@ export const SOCIALS: SocialObjects = [
     name: "Mail",
     href: "mailto:mail@aaronngray.org",
     src: "/icons/socials/mail.png",
-    linkTitle: `Send an email to ${SITE.title}`,
+    linkTitle: `mail@aaronngray.org`,
+    active: true,
+  },
+  {
+    name: "RSS",
+    href: "/rss.xml",
+    src: "/icons/rss.png",
+    linkTitle: `Subscribe to ${SITE.title}'s RSS feed`,
     active: true,
   },
 ];

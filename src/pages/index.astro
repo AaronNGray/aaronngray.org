@@ -34,7 +34,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
       featuredPosts.length > 0 && (
         <>
           <section id="featured">
-            <h2>Featured</h2>
+            <h2>Posts</h2>
             <ul>
               {featuredPosts.map(({ data }) => (
                 <Card
@@ -87,7 +87,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
 <style>
   /* ===== Hero Section ===== */
   #hero {
-    @apply pb-6 pt-1;
+    @apply pb-3 pt-1;
   }
   #hero h1 {
     @apply inline-block text-3xl font-bold sm:my-2 sm:text-5xl;
@@ -117,7 +117,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
   /* ===== Featured & Recent Posts Sections ===== */
   #featured,
   #recent-posts {
-    @apply pb-6 pt-12;
+    @apply pb-3 pt-6;
   }
   #featured h2,
   #recent-posts h2 {

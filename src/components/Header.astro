@@ -1,19 +1,30 @@
 ---
-import { LOGO_IMAGE, LOGO_LABEL, SITE } from "@config";
+import { LOGO_IMAGE, LOGO_LABEL, SITE, SOCIALS } from "@config";
 import Hr from "./Hr.astro";
 import LinkButton from "./LinkButton.astro";
+import Socials from "@components/Socials.astro";
 
 export interface Props {
   activeNav?: "posts" | "tags" | "about" | "search";
 }
 
 const { activeNav } = Astro.props;
+const socialCount = SOCIALS.filter(social => social.active).length;
+
 ---
 
 <header>
-  <a id="skip-to-content" href="#main-content">Skip to content</a>
-  <div class="nav-container">
-    <div class="top-nav-wrap">
+  <div class="header-container">
+  {
+    SITE.headerImage && (
+      <div class="header-image">
+        <img src={SITE.headerImageSrc} alt="Header image" class="header-image" />
+      </div>
+    )
+  }
+  </div>
+  <div class="main-banner">
+    <div class="main-banner-right">
       <a href="/" class="logo whitespace-nowrap">
         {
           LOGO_IMAGE.enable ? (
@@ -31,6 +42,20 @@ const { activeNav } = Astro.props;
           )
         }
       </a>
+    </div>
+    <div class="main-banner-left">
+      {
+        socialCount > 0 && (
+          <div class="header-social-icons">
+            <Socials />
+          </div>
+        )
+      }
+    </div>  
+  </div>
+  <!--a id="skip-to-content" href="#main-content">Skip to content</a-->
+  <div class="nav-container">
+    <div class="top-nav-wrap">
       <nav id="nav-menu">
         <button
           class="hamburger-menu focus-outline"
@@ -122,11 +147,48 @@ const { activeNav } = Astro.props;
   #skip-to-content {
     @apply absolute -top-full left-16 z-50 bg-skin-accent px-3 py-2 text-skin-inverted transition-all focus:top-4;
   }
+  .header-container {
+    @apply mx-auto max-w-3xl flex-col items-center justify-between;
+  }
+
+  .header-image {
+    @apply mb-0 flex justify-center;
+  }
+  .header-image img {
+    @apply w-full max-w-full rounded-lg;
+  }
+  .header-image img:hover {
+    @apply scale-105;
+  }
+  .header-social-icons {
+    @apply mb-4 flex m-0 sm:justify-end;
+  }
+
+  .main-banner {
+    @apply mx-auto flex w-full max-w-3xl flex-col items-center justify-center pt-2 sm:flex-row sm:justify-between;
+  }
+  .main-banner-right {
+    @apply flex flex-col items-center sm:items-center;
+  }
+  .main-banner-left {
+    @apply flex flex-col items-center sm:items-center;
+  }
+
+  .header-social-icons {
+    @apply mt-2 flex sm:justify-end;
+  }
+  .social-wrapper {
+    @apply mt-2 flex flex-col sm:flex-row sm:items-center;
+  }
+  .social-links {
+    @apply mt-1 mr-2 whitespace-nowrap sm:mb-0;
+  }
+
   .nav-container {
     @apply mx-auto flex max-w-3xl flex-col items-center justify-between sm:flex-row;
   }
   .top-nav-wrap {
-    @apply relative flex w-full items-start justify-between p-4 sm:items-center sm:py-8;
+    @apply relative flex w-full items-start justify-between p-0 sm:items-center sm:py-2;
   }
   .logo {
     @apply absolute py-1 text-xl font-semibold sm:static sm:text-2xl;
@@ -189,6 +251,8 @@ const { activeNav } = Astro.props;
   .menu-icon.is-active .close {
     @apply opacity-100;
   }
+
+
 </style>
 
 <script>

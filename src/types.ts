@@ -6,11 +6,14 @@ export type Site = {
   ogImage?: string;
   lightAndDarkMode: boolean;
   postPerPage: number;
+  headerImage: boolean;
+  headerImageSrc?: string;
 };
 
 export type SocialObjects = {
   name: SocialMedia;
   href: string;
+  src: string;
   active: boolean;
   linkTitle: string;
 }[];
@@ -42,5 +45,5 @@ export type SocialMedia =
   | "Mastodon"
   | "Sessionize"
   | "OpenSauced"
-  | "BSky"
+  | "BlueSky"
   | "Medium";
